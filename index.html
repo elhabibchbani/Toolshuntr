@@ -52,71 +52,102 @@
 <body class="antialiased">
 	<!-- navbar -->
 	<div x-data="{ open: false, atTop: true }" @scroll.window="atTop = (window.pageYOffset > 50) ? false : true"
-		:class="{ 'bg-white shadow-lg py-2': !atTop, 'bg-cream py-6': atTop }"
-		class="fixed top-0 left-0 right-0 w-full text-gray-700 z-[100] transition-all duration-300">
-		<div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-			<div class="flex flex-row items-center justify-between">
-				<div class="relative">
-					<a href="#"
-						class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Toolshuntr</a>
-					<svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
-							fill="#65DAFF" />
-					</svg>
-				</div>
-				<button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-						<path x-show="!open" fill-rule="evenodd"
-							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-							clip-rule="evenodd"></path>
-						<path x-show="open" fill-rule="evenodd"
-							d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-							clip-rule="evenodd"></path>
-					</svg>
-				</button>
-			</div>
-			<nav :class="{ 'flex': open, 'hidden': !open }"
-				class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-				<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
-					href="./index.html">Home</a>
-				<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
-					href="#">Best VPNs</a>
-				<div class="relative" x-data="{ openStreaming: false }" @mouseenter="openStreaming = true"
-					@mouseleave="openStreaming = false">
-					<button
-						class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-blue-500 transition-colors">
-						<span>Streaming</span>
-						<svg fill="currentColor" viewBox="0 0 20 20"
-							:class="{'rotate-180': openStreaming, 'rotate-0': !openStreaming}"
-							class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-							<path fill-rule="evenodd"
-								d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-								clip-rule="evenodd"></path>
-						</svg>
-					</button>
-					<div x-show="openStreaming" style="display: none;"
-						class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-30">
-						<div class="px-2 py-2 bg-white rounded-md shadow-xl border border-gray-100">
-							<a class="block px-4 py-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100"
-								href="#">VPN for Netflix</a>
-							<a class="block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100"
-								href="#">VPN for Disney+</a>
-							<a class="block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100"
-								href="#">VPN for Gaming</a>
-						</div>
-					</div>
-				</div>
-				<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
-					href="#">prodacte</a>
-				<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
-					href="#">blog</a>
-				<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
-					href="#">About Us</a>
-			</nav>
-		</div>
-	</div>
+        :class="{ 'bg-white shadow-lg py-2': !atTop, 'bg-cream py-6': atTop }"
+        class="fixed top-0 left-0 right-0 w-full text-gray-700 z-[100] transition-all duration-300">
+        <div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
+            <div class="flex flex-row items-center justify-between">
+                <div class="relative">
+                    <a href="./index.html"
+                        class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Toolshuntr</a>
+                    <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
+                            fill="#65DAFF" />
+                    </svg>
+                </div>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{ 'flex': open, 'hidden': !open }"
+                class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row items-center">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
+                    href="./index.html">Home</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
+                    href="./BestVPNs.html">Best VPNs</a>
+
+                <div class="relative" x-data="{ openStreaming: false }">
+                    <button @click="openStreaming = !openStreaming" @click.away="openStreaming = false"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-blue-500 transition-colors focus:outline-none">
+                        <span>Streaming</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20"
+                            :class="{'rotate-180': openStreaming, 'rotate-0': !openStreaming}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <div x-show="openStreaming" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95" style="display: none;"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-30">
+                        <div class="px-2 py-2 bg-white rounded-md shadow-xl border border-gray-100">
+                            <a class="block px-4 py-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100 transition-colors"
+                                href="./Streaming/VPNForNetflix.html">VPN for Netflix</a>
+                            <a class="block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100 transition-colors"
+                                href="./Streaming/VPNForDisney.html">VPN for Disney+</a>
+                            <a class="block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100 transition-colors"
+                                href="./Streaming/VPNForGaming.html">VPN for Gaming</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
+                    href="./Products.html">Products</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
+                    href="./Blog.html">Blog</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-blue-500 transition-colors"
+                    href="./AboutUs.html">About Us</a>
+
+                <div class="relative md:ml-4" x-data="{ openLang: false }">
+                    <button @click="openLang = !openLang" @click.away="openLang = false"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 hover:text-blue-500 transition-colors focus:outline-none uppercase">
+                        <span>EN</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20"
+                            :class="{'rotate-180': openLang, 'rotate-0': !openLang}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="openLang" x-transition style="display: none;"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-32 z-50">
+                        <div class="px-2 py-2 bg-white rounded-md shadow-xl border border-gray-100">
+                            <a class="block px-4 py-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100 transition-colors"
+                                href="?lang=en">English</a>
+                            <a class="block px-4 py-2 mt-1 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-100 transition-colors"
+                                href="?lang=fr">Français</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
 	<div class="bg-cream">
 		<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
 			<!--Left Col-->
