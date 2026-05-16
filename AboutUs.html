@@ -44,6 +44,26 @@
         .bg-cream {
             background-color: #FFFDF5;
         }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bg-cream {
+            background-color: #FFFDF8;
+        }
+
+        .text-orange-custom {
+            color: #FF5A1F;
+        }
+
+        .bg-orange-custom {
+            background-color: #FF5A1F;
+        }
+
+        .bg-navy-custom {
+            background-color: #0A0D14;
+        }
     </style>
 
 
@@ -61,9 +81,9 @@
                         class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Toolshuntr</a>
                     <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
-                            fill="#65DAFF" />
+                            <path
+                                d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
+                                fill="#FF5A1F" />
                     </svg>
                 </div>
                 <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -149,60 +169,517 @@
         </div>
     </div>
 
+    <!-- 
+    ================================
+    About US
+    ================================ 
+    -->
 
-<div class="bg-cream h-screen flex flex-col justify-center">
-    <div class="max-w-screen-xl px-8 mx-auto w-full flex justify-center items-center">
-        <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="w-full flex justify-center">
-            
-            <button class="bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-20 shadow-lg transform transition hover:scale-105 duration-300 ease-in-out focus:outline-none">
-                About Us
-            </button>
-            
+
+    <section
+        class="bg-cream min-h-screen flex flex-col justify-center items-center border-b border-gray-100 relative overflow-hidden">
+
+        <div class="absolute top-20 left-10 w-64 h-64 bg-orange-100 rounded-full filter blur-3xl opacity-30"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
+
+        <div class="max-w-screen-xl mx-auto px-8 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-extrabold mb-8 tracking-tighter text-gray-900">
+                About <span class="text-orange-custom">Us</span>
+            </h1>
+
+            <nav
+                class="flex justify-center items-center space-x-4 text-sm md:text-base font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="./index.html" class="hover:text-orange-custom transition-colors duration-300">Home</a>
+                <span class="text-orange-custom text-2xl font-light">/</span>
+                <span class="text-orange-custom">About</span>
+            </nav>
         </div>
-    </div>
-</div>
-
+    </section>
 
     <!-- .container -->
 
-    <footer class="mt-32" style="background-color: rgba(37, 38, 65, 1);">
-        <div class="max-w-lg mx-auto">
-            <div class="flex py-12 justify-center text-white items-center px-20 sm:px-36">
-                <div class="relative">
-                    <h1 class="font-bold text-xl pr-5 relative z-50">Toolshuntr</h1>
-                    <svg class="w-11 h-11 absolute -top-2 -left-3 z-40" viewBox="0 0 79 79" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M35.9645 2.94975C37.9171 0.997129 41.0829 0.997127 43.0355 2.94975L76.0502 35.9645C78.0029 37.9171 78.0029 41.0829 76.0503 43.0355L43.0355 76.0502C41.0829 78.0029 37.9171 78.0029 35.9645 76.0503L2.94975 43.0355C0.997129 41.0829 0.997127 37.9171 2.94975 35.9645L35.9645 2.94975Z"
-                            stroke="#26C1F2" stroke-width="2" />
-                    </svg>
-                </div>
-                <span class="border-l border-gray-500 text-sm pl-5 py-2 font-semibold">Anti Lag and Speed</span>
-            </div>
-            <div class="text-center pb-16 pt-5">
-                <label class="text-gray-300 font-semibold">Subscribe to get our Newsletter</label>
+    <section class="bg-white py-20 px-8">
+        <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+            <div class="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+
                 <div
-                    class="px-5 sm:px-0 flex flex-col sm:flex-row sm:space-x-3 space-y-3 sm:space-y-0 justify-center mt-3">
-                    <input type="email" placeholder="Your Email"
-                        class="rounded-full py-2 pl-5 bg-transparent border border-gray-400">
-                    <button type="submit"
-                        class="text-white w-40 sm:w-auto mx-auto sm:mx-0 font-semibold px-5 py-2 rounded-full"
-                        style="background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);">Subscribe</button>
+                    class="bg-[#F8F9FA] p-10 rounded-[2.5rem] text-center border border-gray-50 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl group">
+                    <div class="mb-5">
+                        <img src="./img/About Us/About-Us-03.png" alt="icon" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0A0D14] mb-3">Who We Are</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
                 </div>
+
+                <div
+                    class="bg-[#F8F9FA] p-10 rounded-[2.5rem] text-center border border-gray-50 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl group">
+                    <div class="mb-5">
+                        <img src="./img/About Us/About-Us-04.png" alt="icon" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0A0D14] mb-3">What Drives Us</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                </div>
+
+                <div
+                    class="bg-[#F8F9FA] p-10 rounded-[2.5rem] text-center border border-gray-50 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl group">
+                    <div class="mb-5">
+                        <img src="./img/About Us/About-Us-01.png" alt="icon" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0A0D14] mb-3">Our Mission</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                </div>
+
+                <div
+                    class="bg-[#F8F9FA] p-10 rounded-[2.5rem] text-center border border-gray-50 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl group">
+                    <div class="mb-5">
+                        <img src="./img/About Us/About-Us-02.png" alt="icon" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0A0D14] mb-3">Our Commitment</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                </div>
+
             </div>
-            <div class="flex items-center text-gray-400 text-sm justify-center">
-                <a href="./index.html" class="pr-3">Home</a>
-                <a href="#!" class="border-l border-gray-400 px-3">Privacy</a>
-                <a href="#!" class="border-l border-gray-400 pl-3">Terms & Conditions</a>
+
+            <div class="w-full lg:w-1/2 text-left">
+                <span class="text-[#FF5A1F] font-bold uppercase text-xs tracking-[0.2em]">About Us</span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0A0D14] leading-[1.1] mt-4 mb-8">
+                    Committed Fully to Securing Your Digital Freedom Safely
+                </h2>
+                <p class="text-gray-500 text-base md:text-lg leading-relaxed mb-10 max-w-xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis, pulvinar dapibus leo.
+                </p>
+
+                <a href="#"
+                    class="inline-block bg-[#BD3E05] hover:bg-[#0A0D14] text-white font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+                    Read More
+                </a>
             </div>
-            <div class="text-center text-white">
-                <p class="my-3 text-gray-400 text-sm">&copy; 2021 Toolshuntr Inc. </p>
-                <div class="py-3 tracking-wide">
+
+        </div>
+    </section>
+
+
+    <section class="bg-[#FFFDF8]   overflow-hidden">
+        <div class="max-w-screen-xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-center gap-10">
+
+            <div class="w-full lg:w-6/12 flex flex-col justify-center"> <span
+                    class="text-[#BD3E05] font-bold uppercase text-[10px] tracking-[0.2em] mb-2 block">Why Choose
+                    Us</span>
+
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#0A0D14] leading-tight mb-4">
+                    The Smart Choice for a Safer and Faster Internet
+                </h2>
+
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div class="border-l-2 border-gray-100 pl-4">
+                        <h4 class="text-lg font-bold text-[#0A0D14] mb-2">Unmatched Security</h4>
+                        <ul class="space-y-2 text-xs md:text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> End-to-end encryption
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> Kill Switch features
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> Strict No-Logs Policy
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="border-l-2 border-gray-100 pl-4">
+                        <h4 class="text-lg font-bold text-[#0A0D14] mb-2">Fast Connection</h4>
+                        <ul class="space-y-2 text-xs md:text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> High-speed servers
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> 99.9% Uptime
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FF5A1F] mr-2">✔</span> Global coverage
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
+
+            <div class="w-full lg:w-5/12 flex justify-center items-center">
+                <img src="./img/About Us/girl-with-laptop.png.png" alt="Why Choose Us"
+                    class="w-full max-w-sm md:max-w-md object-contain">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-white py-12 md:py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-12">
+                <span class="text-[#BD3E05] font-bold uppercase text-[10px] tracking-[0.2em] mb-3 block">Our Team</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#0A0D14] mb-4">Meet the Experts Behind Our Success
+                </h2>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-0">
+
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-gray-100 mb-4 aspect-[4/5] shadow-sm">
+                        <img src="./img/About Us/team/member1.jpg" alt="James Carter"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-4 text-white font-bold text-xs">
+                                <a href="#" class="hover:text-[#FF5A1F]">f</a>
+                                <a href="#" class="hover:text-[#FF5A1F]">x</a>
+                                <a href="#" class="hover:text-[#FF5A1F]">in</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-bold text-[#0A0D14]">James Carter</h4>
+                        <p class="text-[#BD3E05] font-bold uppercase text-[9px] tracking-wider mt-1">CEO & Founder of
+                            Versilo</p>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-gray-100 mb-4 aspect-[4/5] shadow-sm">
+                        <img src="./img/About Us/team/member2.jpg" alt="Olivia"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-4 text-white font-bold text-xs">
+                                <span>f</span><span>x</span><span>in</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-bold text-[#0A0D14]">Olivia Martinez</h4>
+                        <p class="text-[#BD3E05] font-bold uppercase text-[9px] tracking-wider mt-1">Chief Technology
+                            Officer</p>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-gray-100 mb-4 aspect-[4/5] shadow-sm">
+                        <img src="./img/About Us/team/member3.jpg" alt="Daniel"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-4 text-white font-bold text-xs">
+                                <span>f</span><span>x</span><span>in</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-bold text-[#0A0D14]">Daniel Wong</h4>
+                        <p class="text-[#BD3E05] font-bold uppercase text-[9px] tracking-wider mt-1">Head of Customer
+                            Support</p>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-gray-100 mb-4 aspect-[4/5] shadow-sm">
+                        <img src="./img/About Us/team/member4.jpg" alt="Sophia"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-4 text-white font-bold text-xs">
+                                <span>f</span><span>x</span><span>in</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-bold text-[#0A0D14]">Sophia Lee</h4>
+                        <p class="text-[#BD3E05] font-bold uppercase text-[9px] tracking-wider mt-1">Marketing & Brand
+                            Manager</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20 px-8">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-16">
+                <span class="text-[#BD3E05] font-bold uppercase text-[10px] tracking-[0.2em] mb-3 block">FAQs</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#0A0D14] mb-4">Everything You Need to Know</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-sm">Our most frequently asked questions about security
+                    and speed.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-stretch gap-12">
+
+                <div class="w-full lg:w-5/12">
+                    <div class="h-full rounded-[3rem] overflow-hidden bg-gray-50 shadow-sm border border-gray-100">
+                        <img src="./img/About Us/faq-girl.jpg" alt="Support"
+                            class="w-full h-full object-cover shadow-inner">
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-7/12 flex flex-col justify-center" x-data="{ active: 0 }">
+                    <div class="space-y-3">
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 0 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 0 ? null : 0"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 0 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">What is a VPN, and why
+                                    do I need it?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 0 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 0 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 0" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">A VPN (Virtual Private
+                                    Network) encrypts your internet connection, keeping your data secure and private. It
+                                    helps you browse anonymously, bypass geo-restrictions, and protect your sensitive
+                                    information from hackers.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 1 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 1 ? null : 1"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 1 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">Can I use the VPN on
+                                    multiple devices?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 1 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 1 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 1" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Yes! Depending on your
+                                    subscription plan, you can connect multiple devices simultaneously, including
+                                    smartphones, laptops, tablets, and even routers.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 2 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 2 ? null : 2"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 2 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">Will using a VPN slow
+                                    down my internet speed?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 2 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 2 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 2" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">While a VPN may slightly
+                                    reduce your speed due to encryption, our high-speed servers are optimized to ensure
+                                    minimal impact, allowing smooth browsing, streaming, and gaming.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 3 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 3 ? null : 3"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 3 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">Is my data logged when I
+                                    use the VPN?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 3 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 3 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 3" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">No, we follow a strict no
+                                    log policy, meaning we do not track, store, or share your online activities. Your
+                                    privacy is our top priority.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 4 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 4 ? null : 4"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 4 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">Can I access streaming
+                                    services with this VPN?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 4 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 4 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 4" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Yes! Our VPN allows you to
+                                    bypass geo-restrictions and access streaming platforms like Netflix, Hulu, and
+                                    Disney+ from anywhere in the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-100 rounded-2xl transition-all duration-300 shadow-sm"
+                            :class="active === 5 ? 'shadow-md border-orange-100' : 'hover:border-gray-200'">
+                            <button @click="active = active === 5 ? null : 5"
+                                class="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none">
+                                <span class="font-bold text-sm md:text-base"
+                                    :class="active === 5 ? 'text-[#FF5A1F]' : 'text-[#0A0D14]'">How do I set up the VPN
+                                    on my device?</span>
+                                <div class="relative w-4 h-4 flex items-center justify-center">
+                                    <div class="w-3 h-0.5 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 5 ? 'bg-[#FF5A1F]' : ''"></div>
+                                    <div class="absolute w-0.5 h-3 bg-gray-300 rounded-full transition-all duration-300"
+                                        :class="active === 5 ? 'rotate-90 opacity-0' : ''"></div>
+                                </div>
+                            </button>
+                            <div x-show="active === 5" x-collapse class="px-6 pb-4">
+                                <div class="w-full h-[1px] bg-gray-50 mb-3"></div>
+                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Setting up is easy! Simply
+                                    download our app, log in, and connect to a server of your choice. We also provide
+                                    step-by-step guides for manual setup on different devices.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        ===========================
+        footer
+        ===========================
+    -->
+
+
+    <footer class="bg-[#0A0D14] text-white py-16 px-8">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="text-[#FF5A1F] text-4xl font-black italic">T</div>
+                        <span class="text-3xl font-bold tracking-tight">oolshuntr</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis.
+                    </p>
+
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">f</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">x</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">in</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Quick Link</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Home</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                About Us</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Our Service</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Versilo Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Service</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Cyber Shield</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span> IT
+                                Support</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Cloud Backup</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Web Security</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Subscribe Our Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur</p>
+
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Email"
+                                class="w-full bg-transparent border border-gray-700 rounded-full py-4 px-6 text-sm focus:border-[#FF5A1F] outline-none transition-all">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-[#FF5A1F] hover:bg-white hover:text-[#0A0D14] text-white font-bold py-4 rounded-full transition-all duration-300 shadow-lg">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-xs">
+                <p>&copy; 2026 Toolshuntr. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+
 
     <!-- AOS init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

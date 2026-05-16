@@ -44,6 +44,26 @@
         .bg-cream {
             background-color: #FFFDF5;
         }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bg-cream {
+            background-color: #FFFDF8;
+        }
+
+        .text-orange-custom {
+            color: #FF5A1F;
+        }
+
+        .bg-orange-custom {
+            background-color: #FF5A1F;
+        }
+
+        .bg-navy-custom {
+            background-color: #0A0D14;
+        }
     </style>
 
 
@@ -63,7 +83,7 @@
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
-                            fill="#65DAFF" />
+                            fill="#FF5A1F" />
                     </svg>
                 </div>
                 <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -150,56 +170,258 @@
     </div>
 
 
-<div class="bg-cream h-screen flex flex-col justify-center">
-    <div class="max-w-screen-xl px-8 mx-auto w-full flex justify-center items-center">
-        <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="w-full flex justify-center">
-            
-            <button class="bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-20 shadow-lg transform transition hover:scale-105 duration-300 ease-in-out focus:outline-none">
+    <!-- 
+    ================================
+    AProducts
+    ================================ 
+    -->
+
+
+    <section
+        class="bg-cream min-h-screen flex flex-col justify-center items-center border-b border-gray-100 relative overflow-hidden">
+
+        <div class="absolute top-20 left-10 w-64 h-64 bg-orange-100 rounded-full filter blur-3xl opacity-30"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
+
+        <div class="max-w-screen-xl mx-auto px-8 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-extrabold mb-8 tracking-tighter text-gray-900">
                 Products
-            </button>
-            
+            </h1>
+
+            <nav
+                class="flex justify-center items-center space-x-4 text-sm md:text-base font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="./index.html" class="hover:text-orange-custom transition-colors duration-300">Home</a>
+                <span class="text-orange-custom text-2xl font-light">/</span>
+                <span class="text-orange-custom">Products</span>
+            </nav>
         </div>
-    </div>
-</div>
+    </section>
 
 
-    <!-- .container -->
 
-    <footer class="mt-32" style="background-color: rgba(37, 38, 65, 1);">
-        <div class="max-w-lg mx-auto">
-            <div class="flex py-12 justify-center text-white items-center px-20 sm:px-36">
-                <div class="relative">
-                    <h1 class="font-bold text-xl pr-5 relative z-50">Toolshuntr</h1>
-                    <svg class="w-11 h-11 absolute -top-2 -left-3 z-40" viewBox="0 0 79 79" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M35.9645 2.94975C37.9171 0.997129 41.0829 0.997127 43.0355 2.94975L76.0502 35.9645C78.0029 37.9171 78.0029 41.0829 76.0503 43.0355L43.0355 76.0502C41.0829 78.0029 37.9171 78.0029 35.9645 76.0503L2.94975 43.0355C0.997129 41.0829 0.997127 37.9171 2.94975 35.9645L35.9645 2.94975Z"
-                            stroke="#26C1F2" stroke-width="2" />
-                    </svg>
+    <!-- 
+    ================================
+    .container
+    ================================ 
+    -->
+
+    <!-- 
+    ================================
+    AProducts
+    ================================ 
+    -->
+
+    <section class=" py-20 px-8">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="h-[1px] w-12 bg-gray-300"></div>
+                    <span class="text-[#6366F1] font-bold uppercase text-xs tracking-widest">Our Products</span>
+                    <div class="h-[1px] w-12 bg-gray-300"></div>
                 </div>
-                <span class="border-l border-gray-500 text-sm pl-5 py-2 font-semibold">Anti Lag and Speed</span>
             </div>
-            <div class="text-center pb-16 pt-5">
-                <label class="text-gray-300 font-semibold">Subscribe to get our Newsletter</label>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
                 <div
-                    class="px-5 sm:px-0 flex flex-col sm:flex-row sm:space-x-3 space-y-3 sm:space-y-0 justify-center mt-3">
-                    <input type="email" placeholder="Your Email"
-                        class="rounded-full py-2 pl-5 bg-transparent border border-gray-400">
-                    <button type="submit"
-                        class="text-white w-40 sm:w-auto mx-auto sm:mx-0 font-semibold px-5 py-2 rounded-full"
-                        style="background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);">Subscribe</button>
+                    class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-indigo-50 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center">
+                        <svg class="absolute inset-0 w-full h-full opacity-10 group-hover:opacity-20 transition-opacity"
+                            viewBox="0 0 80 80" fill="none">
+                            <path
+                                d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
+                                fill="#6366F1" />
+                        </svg>
+                        <span class="text-3xl relative z-10 text-[#6366F1]">🤖</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">AI Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Creating & optimizing models using proprietary or customer data. AI model tailored to specific
+                        business.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center font-bold text-sm text-[#0A0D14] border-b-2 border-transparent hover:border-indigo-600 transition-all">
+                        Read More <span class="ml-2">→</span>
+                    </a>
                 </div>
-            </div>
-            <div class="flex items-center text-gray-400 text-sm justify-center">
-                <a href="./index.html" class="pr-3">Home</a>
-                <a href="#!" class="border-l border-gray-400 px-3">Privacy</a>
-                <a href="#!" class="border-l border-gray-400 pl-3">Terms & Conditions</a>
-            </div>
-            <div class="text-center text-white">
-                <p class="my-3 text-gray-400 text-sm">&copy; 2021 Toolshuntr Inc. </p>
-                <div class="py-3 tracking-wide">
 
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center text-[#6366F1]">
+                        <svg class="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 80 80" fill="none">
+                            <path
+                                d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
+                                fill="#6366F1" />
+                        </svg>
+                        <span class="text-3xl relative z-10">📊</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">Data Analytics</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Providing insights for time-sensitive
+                        decisions. Forecasting trends, risks, and opportunities.</p>
+                    <a href="#" class="inline-flex items-center font-bold text-sm text-[#0A0D14]">Read More <span
+                            class="ml-2">→</span></a>
                 </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center text-[#6366F1]">
+                        <svg class="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 80 80" fill="none">
+                            <path
+                                d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
+                                fill="#6366F1" />
+                        </svg>
+                        <span class="text-3xl relative z-10">🧠</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">Machine Learning</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Building algorithms tailored to specific
+                        needs. Using advanced techniques to improve accuracy.</p>
+                    <a href="#" class="inline-flex items-center font-bold text-sm text-[#0A0D14]">Read More <span
+                            class="ml-2">→</span></a>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center"><span
+                            class="text-3xl">🛡️</span></div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">Cyber Security</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Advanced protection for your digital assets
+                        against modern threats.</p>
+                    <a href="#" class="inline-flex items-center font-bold text-sm text-[#0A0D14]">Read More <span
+                            class="ml-2">→</span></a>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center"><span
+                            class="text-3xl">☁️</span></div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Scalable and secure cloud infrastructure for
+                        your business needs.</p>
+                    <a href="#" class="inline-flex items-center font-bold text-sm text-[#0A0D14]">Read More <span
+                            class="ml-2">→</span></a>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="mb-6 relative w-16 h-16 flex items-center justify-center"><span
+                            class="text-3xl">🏢</span></div>
+                    <h3 class="text-2xl font-bold text-[#0A0D14] mb-4">AI Consulting</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Expert advice on implementing AI applications
+                        in your workflow.</p>
+                    <a href="#" class="inline-flex items-center font-bold text-sm text-[#0A0D14]">Read More <span
+                            class="ml-2">→</span></a>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-2">
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-[#6366F1] text-white rounded-full font-bold shadow-lg shadow-indigo-200">1</a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-white text-[#0A0D14] rounded-full font-bold border border-gray-100 hover:bg-[#6366F1] hover:text-white transition-all">2</a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-white text-[#0A0D14] rounded-full font-bold border border-gray-100 hover:bg-[#6366F1] hover:text-white transition-all">3</a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-white text-[#0A0D14] rounded-full font-bold border border-gray-100 hover:bg-[#6366F1] hover:text-white transition-all">
+                    <span class="text-xl">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- 
+        ===========================
+        footer
+        ===========================
+    -->
+
+
+    <footer class="bg-[#0A0D14] text-white py-16 px-8">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="text-[#FF5A1F] text-4xl font-black italic">T</div>
+                        <span class="text-3xl font-bold tracking-tight">oolshuntr</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis.
+                    </p>
+
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">f</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">x</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#FF5A1F] rounded-full flex items-center justify-center hover:bg-white hover:text-[#FF5A1F] transition-all duration-300">
+                            <span class="text-sm font-bold">in</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Quick Link</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Home</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                About Us</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Our Service</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Versilo Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Service</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Cyber Shield</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span> IT
+                                Support</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Cloud Backup</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#FF5A1F] flex items-center gap-2 transition-colors"><span>→</span>
+                                Web Security</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Subscribe Our Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur</p>
+
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Email"
+                                class="w-full bg-transparent border border-gray-700 rounded-full py-4 px-6 text-sm focus:border-[#FF5A1F] outline-none transition-all">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-[#FF5A1F] hover:bg-white hover:text-[#0A0D14] text-white font-bold py-4 rounded-full transition-all duration-300 shadow-lg">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-xs">
+                <p>&copy; 2026 Toolshuntr. All rights reserved.</p>
             </div>
         </div>
     </footer>
